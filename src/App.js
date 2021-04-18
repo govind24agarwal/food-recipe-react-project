@@ -4,7 +4,6 @@ import Home from "./Home";
 import SingleRecipe from "./SingleRecipe.js";
 
 function App() {
-  const val = useGlobalContext();
   return (
     <Switch>
       <Route exact path="/">
