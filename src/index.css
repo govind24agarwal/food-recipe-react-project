@@ -4,6 +4,21 @@ Variables
 =============
 */
 :root {
+  /* dark shades of primary color*/
+  --clr-primary-1: #8b6220;
+  --clr-primary-2: #9e752c;
+  --clr-primary-3: #b08737;
+  /* primary/main color */
+  --clr-primary-5: #c39a43;
+  /* lighter shades of primary color */
+  --clr-primary-6: #eecf6d;
+  --clr-primary-7: #e2be5e;
+  --clr-primary-8: #d5ac4e;
+
+  /*secondary color*/
+  --clr-secondary-1: #7f3814;
+  --clr-secondary-2: #720e07;
+
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-2: hsl(211, 39%, 23%);
