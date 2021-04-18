@@ -180,7 +180,7 @@ Recipes
   transform: translateY(0);
 }
 @media screen and (min-width: 576px) {
-  .mrecipe {
+  .recipes {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
 }

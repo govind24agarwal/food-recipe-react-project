@@ -1,9 +1,12 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 function SingleRecipe() {
+  const { id } = useParams();
+
   return (
     <div>
-      <h2>recipe 1</h2>
+      <h2>{id}</h2>
     </div>
   );
 }

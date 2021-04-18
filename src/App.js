@@ -9,7 +9,7 @@ function App() {
       <Route exact path="/">
         <Home />
       </Route>
-      <Route path="/movies/:id" children={<SingleRecipe />} />
+      <Route path="/recipes/:id" children={<SingleRecipe />} />
     </Switch>
   );
 }

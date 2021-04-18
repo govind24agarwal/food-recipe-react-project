@@ -13,9 +13,10 @@ function Recipes() {
     <section className="recipes">
       {recipes.map((item) => {
         const { label, image, dishType, uri } = item.recipe;
+        const recipeId = encodeURIComponent(uri);
         return (
-          <Link key={uri} to={`/recipes/${uri}`}>
-            <article className="recipe">
+          <Link key={uri} to={`/recipes/${recipeId}`} className="recipe">
+            <article>
               <img src={image} alt={label} />
               <div className="recipe-info">
                 <h4>{label}</h4>
