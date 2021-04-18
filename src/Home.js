@@ -1,10 +1,13 @@
 import React from "react";
+import SearchForm from "./SearchForm";
+import Recipes from "./Recipes";
 
 function Home() {
   return (
-    <div>
-      <h2>Home Component</h2>
-    </div>
+    <main>
+      <SearchForm />
+      <Recipes />
+    </main>
   );
 }
 
