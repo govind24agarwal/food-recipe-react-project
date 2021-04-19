@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import useFetch from "./useFetch";
 
 const AppContext = React.createContext();
@@ -7,7 +7,7 @@ const AppProvider = ({ children }) => {
   const { isLoading, data: recipes, error } = useFetch(`&q=${query}`);
 
   return (
-    <AppContext.Provider value={{ recipes, isLoading, error }}>
+    <AppContext.Provider value={{ recipes, isLoading, error, query, setQuery }}>
       {children}
     </AppContext.Provider>
   );

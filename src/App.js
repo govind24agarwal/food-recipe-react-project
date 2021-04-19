@@ -1,4 +1,3 @@
-import { useGlobalContext } from "./context.js";
 import { Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import SingleRecipe from "./SingleRecipe.js";

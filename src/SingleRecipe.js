@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import usefetch from "./useFetch";
+import { Link } from "react-router-dom";
 
 function SingleRecipe() {
   const { id } = useParams();
@@ -8,7 +9,16 @@ function SingleRecipe() {
   if (isLoading) {
     return <h2>Loading...</h2>;
   }
-  console.log(data);
+  if (error.show) {
+    return (
+      <div className="page-error">
+        <h1>{error.msg}</h1>
+        <Link to="/" className="btn">
+          back to movies
+        </Link>
+      </div>
+    );
+  }
   const { label, image, ingredientLines } = data;
   return (
     <section className="section single-recipe">
