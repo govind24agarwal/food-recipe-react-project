@@ -9,10 +9,11 @@ const useFetch = (urlPrams) => {
   const fetchMovies = async (url) => {
     setIsLoading(true);
     try {
+      console.log(url);
       const response = await fetch(url);
       const data = await response.json();
-      if (data.count > 0) {
-        setData(data.hits);
+      if (data.count > 0 || data.length > 0) {
+        setData(data.hits || data[0]);
         setError({ show: false, msg: "" });
       } else {
         setError({ show: true, msg: "No results matching your description" });

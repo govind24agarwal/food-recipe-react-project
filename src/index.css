@@ -12,7 +12,7 @@ Variables
   --clr-primary-5: #c39a43;
   /* lighter shades of primary color */
   --clr-primary-6: #eecf6d;
-  --clr-primary-7: #e2be5e;
+  --clr-primary-7: #fcf5e4;
   --clr-primary-8: #d5ac4e;
 
   /*secondary color*/
@@ -56,7 +56,7 @@ Variables
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background: var(--clr-grey-10);
+  background: var(--clr-primary-7);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -147,6 +147,7 @@ Recipes
   margin: 0 auto;
   padding-bottom: 5rem;
   padding-top: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
 .recipe {
   position: relative;
@@ -179,8 +180,52 @@ Recipes
 .recipe:hover .recipe-info {
   transform: translateY(0);
 }
-@media screen and (min-width: 576px) {
-  .recipes {
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+
+/*
+===========
+Single Recipe
+===========
+*/
+
+.single-recipe {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 4rem auto;
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+}
+.single-recipe img {
+  display: block;
+  max-height: 80vh;
+  width: auto;
+  max-width: 100%;
+  margin: auto;
+}
+.single-recipe p {
+  max-width: 35rem;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  line-height: 1.8;
+}
+.btn {
+  text-transform: capitalize;
+  padding: 0.25rem, 0.5rem;
+  background: var(--clr-secondary-1);
+  color: var(--clr-white);
+  border-radius: var(--radius);
+  display: inline-block;
+  margin-top: 0.5rem;
+  letter-spacing: var(--spacing);
+}
+
+@media screen and (min-width: 700px) {
+  .single-recipe {
+    grid-template-columns: 1fr 2fr;
   }
+}
+
+.page-error {
+  text-align: center;
+  padding: 2rem;
 }
