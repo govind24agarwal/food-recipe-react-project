@@ -322,7 +322,7 @@ nav {
   background: var(--clr-primary-8);
   color: var(--clr-primary-5);
 }
-.social-icons {
+.my-social-icons {
   display: none;
 }
 
@@ -353,17 +353,17 @@ nav {
     background: transparent;
   }
 
-  .social-icons {
+  .my-social-icons {
     display: flex !important;
     margin: 0rem;
     padding: 0rem;
   }
-  .social-icons a {
+  .my-social-icons a {
     margin: 0 0.2rem;
     color: var(--clr-primary-5);
     transition: var(--transition);
   }
-  .social-icons a:hover {
+  .my-social-icons a:hover {
     color: var(--clr-primary-6);
   }
 }
