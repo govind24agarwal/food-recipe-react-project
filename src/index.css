@@ -367,3 +367,56 @@ nav {
     color: var(--clr-primary-6);
   }
 }
+
+/*
+===========
+About page
+===========
+*/
+
+/*header*/
+.about-me-header {
+  text-align: center;
+}
+
+.about-me h2 {
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+}
+.underline {
+  width: 6rem;
+  height: 0.2rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
+/*main content*/
+.about-us-content {
+  padding: 2rem;
+}
+
+/*info about project - left column on grid*/
+.about-us-info p {
+  letter-spacing: var(--spacing);
+  font-size: 22px;
+}
+
+.about-us-info {
+  text-align: center;
+}
+
+/*info about developer - right column on the grid*/
+.developer {
+  text-align: center;
+  padding: 0 2rem;
+}
+.developer img {
+  max-width: 80%;
+}
+
+@media screen and (min-width: 800px) {
+  .about-us-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
