@@ -20,7 +20,7 @@ function About() {
         </div>
         <div className="developer">
           <h4>Developed by:</h4>
-          <img src={portfolioImage} />
+          <img src={portfolioImage} alt="developer's image" />
           <p>
             I am an engineer student of IIIT Guwahati, currently at the end of
             my 4th year looking for Internship and Job oppotunities.
