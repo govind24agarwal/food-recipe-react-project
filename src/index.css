@@ -354,7 +354,7 @@ nav {
   }
 
   .social-icons {
-    display: flex;
+    display: flex !important;
     margin: 0rem;
     padding: 0rem;
   }
