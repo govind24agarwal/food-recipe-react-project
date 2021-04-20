@@ -12,7 +12,11 @@ export const links = [
 
 export const social = [
   { id: 1, url: "https://github.com/govind24agarwal", icon: <FaGithub /> },
-  { id: 2, url: "in.com/in/govind-agarwal-080147120/", icon: <FaLinkedinIn /> },
+  {
+    id: 2,
+    url: "https://www.linkedin.com/in/govind-agarwal-080147120/",
+    icon: <FaLinkedinIn />,
+  },
   {
     id: 3,
     url: "https://www.facebook.com/govindagarwal24/",
